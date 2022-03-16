@@ -43,10 +43,7 @@ class MinPairSum {
         Arrays.sort(nums);
         int max = 0;
         for(int i=0; i<nums.length/2; i++){
-            //for(int j=i+1; j<nums.length;j++){
-                //if(nums[i]+nums[nums.length-1-i]>max)
-                    max = Math.max(nums[i]+nums[nums.length-1-i], max);
-            //}
+            max = Math.max(nums[i]+nums[nums.length-1-i], max);            
         }
         return max;
     }
